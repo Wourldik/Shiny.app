@@ -11,10 +11,11 @@ shinyUI(pageWithSidebar(
   headerPanel("Кількість жінок у містах"),
   
   sidebarPanel(
-    checkboxGroupInput("city", "Виберіть регіон:", checkbox())
+    checkboxGroupInput("city", "Виберіть регіон:", checkbox()),
+    submitButton("Submit")
   ),
   
   mainPanel(
-    plotOutput("plot", height = "800px")
+    plotOutput("plot",height = 800)
   )
 ))
